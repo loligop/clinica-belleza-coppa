@@ -24,7 +24,9 @@ header {
     grid-template-columns: 30% 70%;
     grid-template-rows: 90px;
     grid-template-areas: "logo nav";
-    background-color: rgba(255, 255, 255, 0.3);
+    background: #ee9ca7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .main-logo {
@@ -131,8 +133,32 @@ h2 {
     padding: 10px;
     border-radius: 10px;
     display: inline-block;
+    animation: wiggle 2s linear infinite;;
 }
-
+/* Keyframes */
+@keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  }
 .save-the-date-container img {
     width: 250px;
     display: block;
@@ -148,6 +174,7 @@ h2 {
     border: 1px solid #452521;
     background: rgba(200, 200, 200, 0.5);
     border-radius: 10px;
+    animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .services-list li {
@@ -158,7 +185,27 @@ h2 {
     text-shadow: 1px 1px 0px #fff;
 
 }
-
+@-webkit-keyframes slide-bottom {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(100px);
+              transform: translateY(100px);
+    }
+  }
+  @keyframes slide-bottom {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(100px);
+              transform: translateY(100px);
+    }
+  }  
+  
 /*FOOTER*/
 footer {
     display: grid;
