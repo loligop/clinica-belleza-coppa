@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicando Grids</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!--Favicon-->
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/c3a150fd4e.js" crossorigin="anonymous"></script>
+    <!--Animate.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <header>
+        <!--main logo-->
+        <a href="index.html" class="main-logo">
+            <img src="img/main-logo.png" alt="Logo Clínica" />
+        </a>
+        <!-- menú principal -->
+        <nav class="main-menu">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        Inicio
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Sobre mí
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Tratamientos
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="contacto.html">
+                        Contacto
+                    </a>
+                </li>
+            </ul>
+            <a class="menu-bar">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </nav>
+    </header>
+    <main class="form-container">
+        <!-- contenedor formulario -->
+        <form action="post" class="contact-form">
+            <h1>Contacto</h1>
+            <fieldset class="">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="form-group">
+                            <label for="name">Nombre y Apellido</label>
+                            <input id="name" placeholder="Ingrese su nombre" type="text" />
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input id="email" placeholder="Ingrese su email" type="email" />
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="form-group">
+                            <label for="phone">Celular</label>
+                            <input id="phone" placeholder="Ingrese su celular" type="tel" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="city">Ciudad</label>
+                            <input id="city" placeholder="Ingrese la ciudad donde reside" type="text" />
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="form-group">
+                            <label for="country">País</label>
+                            <select id="country" type="text">
+                                <option disabled="true">Seleccione su país</option>
+                                <option>Uruguay</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="form-group textarea-form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" placeholder="Ingrese su mensaje"></textarea>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <button class="submit-button">Enviar</button>
+            </fieldset>
+        </form>
+    </main>
+    <!-- footer -->
+    <footer>
+        <div class="copyright">
+            © Todos los derechos reservados 2022
+        </div>
+        <div class="social-networks">
+            <a href="">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
